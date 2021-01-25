@@ -70,6 +70,9 @@ class Vimeo extends React.Component {
         case 'volume':
           player.setVolume(value);
           break;
+        case 'currenttime':
+          player.setCurrentTime(value);
+          break;
         case 'paused':
           player.getPaused().then((paused) => {
             if (value && !paused) {
